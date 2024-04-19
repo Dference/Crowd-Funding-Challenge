@@ -27,3 +27,12 @@ The total number of votes each candidate won
 
 The winner of the election based on popular vote
 
+# Credits:
+
+For this project, I used the Xpert Learning Asst. as well as worked with a team to troubleshoot that included the following:
+
+Hannah Shelton
+
+Zach Mason
+
+
