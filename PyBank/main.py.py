@@ -52,20 +52,22 @@ rounded_change = round(avg_monthly_change, 2)
 output_path = os.path.join("Analysis", "Findings.txt")
 with open(output_path, "w") as textfile:
    textfile.write(f"Financial Analysis\n")
-   textfile.write(f"______________________________________________\n")
+   textfile.write(f"----------------------------\n")
    textfile.write(f"Total Months: {month}\n")
    textfile.write(f"Total: ${total}\n")
    textfile.write(f"Average Change: ${rounded_change}\n")
-   textfile.write(f"Greatest Profit Increase: {greatest_inc_date} $({greatest_inc})\n")
-   textfile.write(f"Greatest Profit Decrease: {greatest_dec_date} $({greatest_dec})\n")
+   textfile.write(f"Greatest Increase in Profits: {greatest_inc_date} (${greatest_inc})\n")
+   textfile.write(f"Greatest Decrease in Profits: {greatest_dec_date} (${greatest_dec})\n")
 
 
 # Print Totals
-print(f"Total Months: {month}.")
+print("Financial Analysis")
+print("---------------------------")
+print(f"Total Months: {month}")
 print(f"Total: ${total}")
-print(f"Average Change: {rounded_change}")
-print(f"Greatest Profit Increase: {greatest_inc_date}, {(greatest_inc)}")
-print(f"Greatest Profit Decrease: {greatest_dec_date}, {(greatest_dec)}")
+print(f"Average Change: ${rounded_change}")
+print(f"Greatest Increase in Profits : {greatest_inc_date} (${(greatest_inc)})")
+print(f"Greatest Decrease in Profits: {greatest_dec_date} (${(greatest_dec)})")
 
 
 
